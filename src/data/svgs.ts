@@ -736,7 +736,10 @@ export const svgs: iSVG[] = [
   {
     title: 'Amazon Web Services',
     category: 'Software',
-    route: '/library/aws.svg',
+    route: {
+      light: '/library/aws_light.svg',
+      dark: '/library/aws_dark.svg'
+    },
     url: 'https://aws.amazon.com/'
   },
   {
@@ -1070,9 +1073,15 @@ export const svgs: iSVG[] = [
     url: 'https://es.wikipedia.org/wiki/HTML5'
   },
   {
-    title: 'CSS',
+    title: 'CSS (New)',
     category: 'Language',
     route: '/library/css.svg',
+    url: 'https://es.wikipedia.org/wiki/CSS'
+  },
+  {
+    title: 'CSS',
+    category: 'Language',
+    route: '/library/css_old.svg',
     url: 'https://es.wikipedia.org/wiki/CSS'
   },
   {
@@ -3050,6 +3059,12 @@ export const svgs: iSVG[] = [
     url: 'https://polar.sh/'
   },
   {
+    title: 'JSON',
+    category: 'Language',
+    route: '/library/json.svg',
+    url: 'https://json.org/'
+  },
+  {
     title: 'nuqs',
     category: 'Library',
     route: {
@@ -3083,5 +3098,52 @@ export const svgs: iSVG[] = [
       dark: '/library/clerk-dark.svg'
     },
     url: 'https://clerk.com/'
+  },
+  {
+    title: 'Mermaid',
+    category: ['Library'],
+    route: {
+      light: '/library/mermaid-logo-light.svg',
+      dark: '/library/mermaid-logo-dark.svg'
+    },
+    url: 'https://mermaid.js.org/'
+  },
+  {
+    title: 'Home Assistant',
+    category: ['IoT', 'Home Automation', 'Software'],
+    route: '/library/home-assistant.svg',
+    wordmark: {
+      light: '/library/home-assistant-wordmark.svg',
+      dark: '/library/home-assistant-wordmark-dark.svg'
+    },
+    url: 'https://github.com/home-assistant/assets/tree/master/logo'
+  },
+  {
+    title: 'UXAnaRangel',
+    category: ['Community'],
+    route: {
+      light: '/library/uxanarangel-light.svg',
+      dark: '/library/uxanarangel-dark.svg'
+    },
+    url: 'https://uxanarangel.com/'
+  },
+  {
+    title: 'UXCorpRangel',
+    category: ['Community'],
+    route: {
+      light: '/library/uxcorprangel-light.svg',
+      dark: '/library/uxcorprangel-dark.svg'
+    },
+    url: 'https://github.com/UXCorpRangel/'
+  },
+  {
+    title: 'PostHog',
+    category: 'Devtool',
+    route: '/library/posthog.svg',
+    wordmark: {
+      light: '/library/posthog-wordmark.svg',
+      dark: '/library/posthog-wordmark_dark.svg'
+    },
+    url: 'https://posthog.com/'
   }
 ];
